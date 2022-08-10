@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonksiyonlar 2</title>
+</head>
+<body>
+    <script>
+        var toplam = 10 + 20 // Değişkene atama yaparak manuel olarakburda yaptık.
+        console.log(toplam);
+
+        toplam = 20 + 20
+        console.log(toplam);
+
+    </script>
+    <script>
+        function toplam(sayı1,sayı2){
+            console.log(sayı1 + sayı2); //Bir fonksiyon oluşturduk ve hemen sonuçu yazdırdık.
+        }
+
+        toplam(20,20);
+        toplam(40,40);
+    </script>
+
+    <script>
+        function toplam(sayı1,sayı2){
+            return (sayı1 + sayı2) // fonksiyonda oluşan sonuçu istediğimiz yerde kullanmak için return u kullandık.
+        }
+
+        console.log(toplam(20,20));
+        console.log(toplam(40,40));
+    </script>
+
+    <script>
+        function toplam(sayı1,sayı2){
+            return (sayı1 + sayı2)
+        }
+
+        var toplam=toplam(10,20); // Bir değişkene atatık ve display için toplam değişkenini kullandık.
+
+
+        console.log(toplam);
+
+    </script>
+
+
+
+    
+</body>
+</html>
