@@ -54,10 +54,7 @@ console.log("******CONDİTIONS*****");
 
 
 
-//TERNARY DEYİMİ
 
-//KOŞUL ? ifade1 : ifade2
-// eğer koşul doğruysa ifade1, yanlışsa ifade2 ye gider.
 
 
 
