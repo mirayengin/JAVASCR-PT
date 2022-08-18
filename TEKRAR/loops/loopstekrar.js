@@ -1,95 +1,110 @@
-// * ============================================
-// *            DONGULER(LOOPS)- WHILE
-// * ============================================
+// 0-10 arası sayıların toplamını veren kod yazınız
 
-console.log("****** WHILE *******");
+// let num = Number(prompt("Bir sayı giriniz: "));
+// let total = 0;
+
+// for(let i=0; i<=num;i++) {
+//     total += i;
+// }
+
+// console.log(`${num}'a kadar olan sayıların toplamı:${total}`);    
+
+
+//? Ornek: 0-100 Arasinda 10 adet rasgele sayi ureten kodu
+//? for dongusu ile yaziniz..
+
+// ÖNCE KAÇ SAYI İSTİYORSAK ONU İSTEYECEZ
+//İSTENİLEN ARALIK BELİRLENECEK
+
+// let miktar = Number(prompt("İstenilen sayı miktarını giriniz: "));
+// for(let i=1; i<=miktar;i++) {
+//     creat_number = Math.round(0+Math.random()*100);
+//     console.log(`Creat number: ${creat_number}`);
+// }
+
+
+
+//? ÖRNEK: Girilen bir sayinin Asal olup olmadigini yazdiran kodu
+//? for dongulerini kullanarak yaziniz.
+// let control_number = Number(prompt("Bir sayı giriniz: "));
+// let asal=true;
+
+// if(control_number < 2) {
+//     console.log("Girilen sayı ikiden küçük olmamalı.");
+// }else {
+//     for(let i=2;i<control_number;i++){
+//         if(control_number % i === 0 ) {
+//             asal=false;
+//         }
+//     }
+// }
+
+// const result = asal === true ?  "ASALDIR" : "ASAL DEĞİLDİR";
+// console.log(`${control_number} : ${result}`);
+
+// const num = Number(prompt("bir sayı giriniz"));
+// for (let i = 2; i < num; i++) {
+//   if (num % i === 0) {
+//     console.log(`${num} asalsayı değildir.`);
+//     break;
+//   } else {
+//     console.log(`${num} asalsayıdır.`);
+//   }
+// }
 
 //? ORNEK: Kullanicidan 0-100 arasinda bir not isteyen ve girilen not
 //? 0-100'den farkli ise Kullaciniyi uyararak yeniden 0-100 arasinda
 //? not girmeye zorlayan kodu while dongusu ile yaziniz.
 
-// const score = Number(prompt("0-100 arasında not giriniz: "));
-
-// if (score < 0 || score> 100) {
-//     alert("Not 0-100 arasında olmalıdır.");
-// }else {
-//     console.log(`${score} budur.`);
-// }
-
-
-
-// let score = Number(prompt("0-100 arasında not giriniz: "));
-
-// while (score < 0 || score> 100) {
-//     console.log("Not 0-100 arasında olmalıdır.");
-//     score = Number(prompt("0-100 arasında not giriniz: "));
-// }
-
-// console.log("Girdiğiniz not :", score);
-
-
-// * ============================================
-// *            DONGULER(LOOPS)- DO WHILE
-// * ============================================
-
-// let not1;
+// let score ;
+// let score_adeti = Number(prompt("Score adetini giriniz: "));
+// let girilen_score = 0;
 // do {
-//   not1 = +prompt("Lutfen 0-100 arasinda bir not girniz.");
-//   if (not1 < 0 || not1 > 100) {
-//     console.log("Not 0-100 arasinda olmaldir.");
-//   }
-// } while (not1 < 0 || not1 > 100);
+//     score = Number(prompt("Not giriniz: "));
+//     if(score >= 0 && score <= 100){
+//         girilen_score += 1
+//         console.log(`Girilen not ${score} dır. Not kabul edildi.`);
+//     }else {
+//         console.log("0-100 arasında not giriniz.");
+//     }
 
-// console.log("Giridiginiz Not:", not1);
+//     }
+    
+// while(girilen_score < score_adeti)
 
 
 
+// let score_adeti = Number(prompt("Not sayısını giriniz: "));
+// let score = Number(prompt("Notu giriniz: "));
+// let girilen_score = 0;
 
-// ÖDEV: Klavyeden Q veya q karakteri girilene kadar not girişi yapan ve bu karakterlerden birisi girildiğinde O ana kadar girilen tüm notların ortalamasını hesaplayarak konsola ortalamayı bastıran uygulamayı yazınız.
+// while(score_adeti >= girilen_score) {
+//     for(let)
+// }
 
-
-/*********** TAHMİN OYUNU ************/
 
 //* Program 0*100 arasında rasgele bir sayı tutacak ve kullanıcının bu sayıyı 5 kere(hak) de bilmesini isteyecektir. Her yanlışta hakkını bir düşürecek ve ARTTIR/AZALT diyerek kullanıcıyı yönlendirecektir.Sonuç olarak kullanıcının hakkı 0 olursa "Üzgünüz bilemediniz" eğer bildi ise "Tebrikler ... denemede bildiniz" yazacaktır.
 
-//* 1- hak =5
-//* 2- Raskele sayı tut (0-100)
-//* 3- Kullanıcan tahmin iste (tahmın)
-//* 4- hak=hak-1
-//* 5- eğer (tahmin =?rasgele)
-//*        print(Tebrikler Bildiniz)
-//*    değilse (tahmin < rasgele)
-//*        print(Arttır)
-//*    değilse(tahmin > rastgele)
-//*        print(Azalt)
-//* 6- eğer (hak > 0 )
-//*       goto stage-3
-//*   değilse
-//*       print(üzgünüz)
-
 // let hak = 5;
-// const rastgele = Math.round(0+Math.random()*100);
-// console.log(rastgele);
 // let tahmin;
+// let tahmin_sayısı = 0;
+// const random_number = Math.round(0+Math.random()*100);
+// console.log(random_number);
 
 // do {
-//     let tahmin = Number(prompt("0-100 arasında bir tahmin giriniz: "));
-//     hak -= 1;
-//     if ( rastgele === tahmin) {
-//         console.log(`Tebrikler ${5-hak} kerede bildiniz.`);
+//     tahmin = Number(prompt("Sayı giriniz: "))
+//     tahmin_sayısı += 1;
+//     if(random_number === tahmin) {
+//         console.log(`${tahmin_sayısı} kere bildiniz.`);
 //         break;
-//     }else if (tahmin > rastgele){
-//         console.log("Azalt");
-//     }else {
-//         console.log("Arttır");
-//         }
+//     }else if(hak === tahmin_sayısı){
+//         console.log("For you Game over!");
+//     }else{
+//         console.log("Üzülme başarabilirsin.Tekrar dene");
 //     }
+// }while(hak > tahmin_sayısı);
 
-// while (hak > 0);
 
-// if( rastgele === tahmin) {
-//     console.log("Üzgünüz oyunu kaybettiniz.");
-// }
 
 
 //* Program 0*100 arasında rasgele bir sayı tutacak ve kullanıcının bu sayıyı 5 kere(hak) de bilmesini isteyecektir. Her yanlışta hakkını bir düşürecek ve ARTTIR/AZALT diyerek kullanıcıyı yönlendirecektir.Sonuç olarak kullanıcının hakkı 0 olursa "Üzgünüz bilemediniz" eğer bildi ise "Tebrikler ... denemede bildiniz" yazacaktır.
@@ -158,49 +173,6 @@ console.log("****** WHILE *******");
 //     }
 
 // }while(true)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
