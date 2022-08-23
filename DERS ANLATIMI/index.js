@@ -5,6 +5,19 @@ console.log("İF DÖNGÜSÜ");
 //     console.log("code body");
 // }
 
+// ÖRNEK
+
+// let hesapsifre = "erhan", şifre;
+// şifre = prompt("Kayıtlı şifrenizi giriniz: ").toLowerCase();
+
+// if (şifre === hesapsifre) {
+//     console.log("Girilen şifre kabul edildi.");
+// } else {
+//     console.log("Hatalı giriş yaptınız.");
+// }
+
+
+
 // let dizi, karaktersayısı;
 // dizi = prompt("Aklınıza ilk geleni yazın: ");
 // karaktersayısı = dizi.length
@@ -127,6 +140,57 @@ do {
 }while(counter < adet);
 
 console.log(`Adınız ${adınız}'tır ve ${adet} defa yazdırılmıştır.`);
+
+
+console.log("---------------------------------------");
+
+console.log("SEARCH METODU");
+
+console.log("string.search(searchValue)");
+
+The search() method matches a string against a regular expression **
+
+The search() method returns the index (position) of the first match.
+
+The search() method returns -1 if no match is found.
+
+The search() method is case sensitive.
+
+
+console.log("ÖRNEK");
+
+// let text = "Mr. Blue has a blue house";
+// let position = text.search("Blue");
+
+
+console.log("-----------------------------------------");
+
+console.log("SLİCE METODU");
+
+console.log("string.slice(start, end)");
+
+
+console.log("Slice Metodunun Özellikleri");
+The slice() method extracts a part of a string.
+
+The slice() method returns the extracted part in a new string.
+
+The slice() method does not change the original string.
+
+The start and end parameters specifies the part of the string to extract.
+
+The first position is 0, the second is 1, ...
+
+A negative number selects from the end of the string.
+
+
+    
+console.log("ÖRNEK");
+
+
+let text = "Hello world!";
+let result = text.slice(0, 5);
+
 
 // let isimler = "";
 // while (true) {
