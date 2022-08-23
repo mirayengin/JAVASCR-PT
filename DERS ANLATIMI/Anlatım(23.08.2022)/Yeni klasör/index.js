@@ -192,6 +192,72 @@ let text = "Hello world!";
 let result = text.slice(0, 5);
 
 
+
+
+
+console.log("SORU-1");
+
+// let dizi, karaktersayısı;
+// dizi = prompt("Aklınıza ilk geleni yazın: ");
+// karaktersayısı = dizi.length
+// console.log(`Dizinin karakter uzunluğu ${karaktersayısı} dir`);
+
+// for (let i = 0; i <= karaktersayısı; i++) {
+//     karakter = dizi[i];
+//     console.log(dizi[i]);
+//     if (isNaN(dizi[i])) {
+//         console.log(`${dizi[i]} sayı değildir.`);
+//     } else {
+//         console.log(`${dizi[i]} sayıdır.`);
+//         break;
+//     }
+// }
+
+
+
+console.log("SORU-2");
+
+// console.log("Soru-1 = Çarpım toplosunu yazdırınız.")
+// for (var x = 1; x <= 10; x++) {
+//     for (var i = 1; i <= 10; i++) {
+//         console.log(`${x} X ${i} = ${x * i}`);
+//         if (i === 10) {
+//             console.log("---------------------");
+//         }
+//     }
+// }
+
+
+console.log("SORU-3");
+
+// let number, total = 0, counter = 0, avg;
+
+//  while (avg % 2 != 0) {
+//     number = prompt("bir sayı giriniz: ");
+//     if (isNaN(number) == false) {
+//         console.log(`Girilen sayı ${number} dır. Kabul edildi.`)
+//         total += Number(number);
+//         counter += 1;
+//         avg = Math.round(total / counter);
+//         console.log("Girilen sayıların ortalaması : ",avg);
+//     } else {
+//         console.log("Girilen değer kabul edilmedi.")
+//     }
+
+     
+// }
+
+
+
+
+
+
+
+
+
+
+
+
 // let isimler = "";
 // while (true) {
 //   menu = +prompt(
@@ -234,7 +300,6 @@ let result = text.slice(0, 5);
 //     }
 //   }
 // }
-
 
 
 
