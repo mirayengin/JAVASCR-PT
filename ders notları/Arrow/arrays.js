@@ -185,8 +185,8 @@ arabalar.reverse();
 console.log(arabalar);
 
 //* sort() Diziyi alfabetik olarak siralar.
-isimler.sort();
-console.log(isimler);
+// isimler.sort();
+// console.log(isimler);
 
 //! Alfabetik siraladigi icin dogru sonuc cikmayabilir.
 const sayilar = [2, 111, 3, 22, 1, 11, 5, 7, 6];
@@ -203,12 +203,11 @@ console.log(sayilar);
 const array1 = [1, 2, 3, 4];
 array1.fill(0);
 console.log(array1);
-
+array1.fill(0)
 array1.fill(1, 2, 4);
 console.log(array1);
 array1.fill(-1, 1); //* 1. eleman ve sonrasini -1 yap
 console.log(array1);
-
 
 
 
@@ -234,6 +233,27 @@ console.log(sayilar1.lastIndexOf(4)); //? -1
 //! olarak) eger bu girilen sayi, dizi icerisinde bulunuyorsa indisi
 //! (string ve number olarak ayri) yazdirilmalidir. Eger bulunamadiysa
 //! Aranilan bulunamamistir yazidirilmalidir.
+
+const numberB = [1, "bir", 2, "iki", 3, "üç", 4, "dört", 5, "beş", 6, "altı", 7, "yedi", 8, "sekiz", 9, "dokuz"];
+
+let sayiGir = prompt("Enter a figure(write or number").toLowerCase();
+
+let indeks = numberB.includes(sayiGir);
+
+if (indeks) {
+
+    console.log(numberB.indexOf(sayiGir));
+
+    if (sayiGir === Number(sayiGir)) {
+        console.log(`${sayiGir} Number bir değerdir.`);
+    } else if (sayiGir === String(sayiGir)) {
+        console.log(`${sayiGir} String bir değerdir.`);
+    }
+        
+    } else {
+  console.log("Aranılan bulunamamıştır.");
+}
+
 //!-----------------------------------------------------------
 
 //* join()
@@ -272,10 +292,15 @@ console.log(combinedArr);
 
 //* every()
 //*-----------------------------------------------------------
-
 //? Tum diziyi itere eder ve aldigi callback fonksiyonuna gore
 //? test gerceklestirir.Tum elemanlar icin test basarili ise
 //? true aksi takdirde false deger dondurur.
+
+const yasArray = [18, 22, 78, 34, 78, 79, 15];
+const check = yasArray.every((yas) => yas >= 18);
+check
+  ? console.log("Dizideki herkesin yasi 18'den buyuktur")
+  : console.log("Dizide 18 yas alti var");
 
 //* some()
 //*-----------------------------------------------------------
@@ -283,14 +308,27 @@ console.log(combinedArr);
 //? En az bir eleman icin bile test basarili ise true aksi
 //? takdirde false deger dondurur.
 
-//* find()
+const buyuk80 = yasArray.some((y) => y >= 80);
+console.log(buyuk80); //? false
+
+//* find(), findLast()
 //*-----------------------------------------------------------
 //? Aldigi callback fonksiyonuna gore test gerceklestirir.
 //? Kosulu saglayan ilk dizi elemaninin dondurur.
 //? Eger hic bir eleman kosulu saglamazsa undefined dondurur.
+
+//?Ornek: Yasi 30 dan buyuk olan ilk elemani yazdirin
+const yasIlk30 = yasArray.find((yas) => yas >= 30);
+const yasSon30 = yasArray.findLast((yas) => yas >= 30);
+console.log(yasIlk30, yasSon30);
 
 //* findIndex()
 //*-----------------------------------------------------------
 //? Aldigi callback fonksiyonuna gore test gerceklestirir.
 //? Kosulu saglayan ilk dizi elemaninin indeksini dondurur.
 //? Eger hic bir eleman kosulu saglamazsa -1 dondurur.
+
+//?Ornek: Yasi 30 dan buyuk olan ilk elemanin indexini yazdirin
+
+const foundIndex = yasArray.findIndex((yas) => yas >= 30);
+console.log(foundIndex);
