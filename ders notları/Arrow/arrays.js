@@ -240,14 +240,14 @@ let sayiGir = prompt("Enter a figure(write or number").toLowerCase();
 
 let indeks = numberB.includes(sayiGir);
 
-if (indeks) {
+if (indeks != -1) {
 
     console.log(numberB.indexOf(sayiGir));
 
     if (sayiGir === Number(sayiGir)) {
-        console.log(`${sayiGir} Number bir değerdir.`);
+        console.log(`${sayiGir} Number bir değerdir. İndenksi ${indeks} dır.`);
     } else if (sayiGir === String(sayiGir)) {
-        console.log(`${sayiGir} String bir değerdir.`);
+        console.log(`${sayiGir} String bir değerdir.İndenksi ${indeks} dır.`);
     }
         
     } else {
