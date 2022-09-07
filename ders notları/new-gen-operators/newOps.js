@@ -73,7 +73,7 @@ team.forEach((p) => {
 //* ======================================================
 
 team.forEach((p) => {
-    const { name, surname, job, age } = p;
+    const { name, surname, job, age } = p; //? Burada parametre sırası önemli değil ama ismi önemli
     console.log("**************************");
     console.log("Name:", p.name);
     console.log("Surname:", p.surname);
@@ -95,7 +95,7 @@ team.forEach((p) => {
 //* REST: (Arrays)
 const autos = ["anadol", "reno", "bmw", "mercedes", "ferrari"];
 
-const [anadol, reno, ...restAutos] = autos;
+const [anadol, reno, ...restAutos] = autos; //? Başka diziye almasını istediğimiz kalan kesintisiz olmalıdır eğer bir durum bu sirayı kesintiye uğratırsa yeni idziye atama yapmıyor.. Bu yüzden sona konuyor dizinin.
 console.log(anadol, reno);
 console.log(restAutos);
 
@@ -124,14 +124,13 @@ const sumAll = (...numbers) => {
   return numbers.reduce((s, n) => (s += n), 0);
 };
 
-console.log("SUM OF NUMBERS:", sumAll(1, 2, 3, 4, 5, 6));
+console.log("SUM OF NUMBERS:", sumAll(1, 2, 3, 4, 5, 6)); //? Burada function a bir dizi verdik parametre olarak biz parametre olarak ...numbers dediğimizi için bize bir array verdi argüman olarak.
 
 
 const showName = (name, surname, ...titles) => {
     console.log(titles);
 
-    const summary = `${name} ${surname} is a ${titles.join(" and 
-    ")}`;
+    const summary = `${name} ${surname} is a ${titles.join(" and ")}`; //? join bir birleştirme metodu ve titles bir dizi ve bu dizi içinde olan elemnların arasına and koyarak birleştirdi.
 
     console.log(summary);
 };
