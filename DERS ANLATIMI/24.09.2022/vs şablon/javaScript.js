@@ -48,12 +48,38 @@
 
 //! ELEMENT EKLEME OLUŞTURUP
 
-const a = document.createElement("li");
-a.className = "liste-item";
-a.id = "newId";
-a.textContent = "Yozgat"; //! içine yazıyı yazdık
+// const a = document.createElement("li");
+// a.className = "liste-item";
+// a.id = "newId";
+// a.textContent = "Yozgat"; //! içine yazıyı yazdık
 
-document.querySelector("ul").appendChild(a); //! Yozgatı sonuna ekledik ul nin 
+// document.querySelector("ul").appendChild(a); //! Yozgatı sonuna ekledik ul nin
 
+
+// console.log(a);
+
+
+
+//! H2 YE YENİ DEĞER ATAMA
+
+// let h2 = document.querySelector("h2");
+
+// h2.textContent = " Clarusway"  //! Burada h2 nin içindeki yazıyı değiştirdik
+
+
+
+
+//! remove  ---- eleent silme
+
+// const a = document.querySelector("li");
+// a.remove(); //! bursa silindi
+
+
+// document.querySelector("ul").remove(); //! ul taiıyıcı olduğu için bütün li ler gitti
+
+
+const a = document.querySelectorAll("li")[2]; //! izmiri şeçtik indekleme ile çünkü quaryselectoeall ile nodelist elde ederiz ve bunlara indexle ulaşabiliriz.
+
+document.querySelector("ul").removeChild(a); //! yukarıda seçtiğimizi sildik
 
 console.log(a);
